@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>ระบบจองรถภายในออฟฟิศ</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>ระบบจองรถภายในออฟฟิศ</h1>
+    <form id="bookingForm">
+        <label>ชื่อผู้จอง:</label>
+        <input type="text" id="name" required />
+
+        <label>วันที่:</label>
+        <input type="date" id="date" required />
+
+        <label>เวลาเริ่ม:</label>
+        <input type="time" id="startTime" required />
+
+        <label>เวลาสิ้นสุด:</label>
+        <input type="time" id="endTime" required />
+
+        <label>ประเภทรถ:</label>
+        <select id="carType">
+            <option value="รถเก๋ง">รถเก๋ง</option>
+            <option value="รถตู้">รถตู้</option>
+            <option value="รถกระบะ">รถกระบะ</option>
+        </select>
+
+        <button type="submit">จองรถ</button>
+    </form>
+
+    <h2>รายการจอง</h2>
+    <button onclick="exportToExcel()">ดาวน์โหลดเป็น Excel</button>
+    <ul id="bookingList"></ul>
+
+    <!-- ใส่ไลบรารี SheetJS สำหรับ Excel -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
