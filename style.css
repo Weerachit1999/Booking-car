@@ -1,0 +1,65 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 30px;
+    background-color: #f0f8ff;
+}
+
+form {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 320px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 400px;
+}
+
+li {
+    background: #e6f7ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+li button {
+    margin-top: 5px;
+    padding: 5px 8px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+li button:hover {
+    background-color: #b52b27;
+}
